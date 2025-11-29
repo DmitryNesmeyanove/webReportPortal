@@ -24,7 +24,7 @@ class LoginTests extends BaseTest {
     """)
     public void testNegative_logInWithAnIncorrectUsername() {
         loginPage.enterLogin("invalidUser")
-                .enterPassword("wrongPass")
+                .enterPassword("1q2w3e")
                 .clickButtonLogin();
 
         assertTrue(loginPage.isErrorMessageDisplayed(),

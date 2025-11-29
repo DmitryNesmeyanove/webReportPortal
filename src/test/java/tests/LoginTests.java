@@ -43,7 +43,7 @@ class LoginTests extends BaseTest {
         3. Нажать кнопку входа.
         4. Убедиться, что пользователь успешно авторизован.
         """)
-    void testPositive_LoginWithDefaultUser() {
+    public void testPositive_LoginWithDefaultUser() {
         loginPage.enterLogin("default")
                 .enterPassword("1q2w3e")
                 .clickButtonLogin();

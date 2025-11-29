@@ -10,7 +10,7 @@ class LoginTests extends BaseTest {
 
     @Test
     @Story("Авторизация с невалидным логином")
-    @DisplayName("Вход в систему с некорректным логином и валидным паролем")
+    @DisplayName("Вход в систему с некорректным логином и невалидным паролем")
     @Owner("Dmitry")
     @TmsLink("TM_37120")
     @Severity(SeverityLevel.NORMAL)

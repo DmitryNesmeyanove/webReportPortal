@@ -17,14 +17,14 @@ class LoginTests extends BaseTest {
     @Description("""
     1. Открыть страницу авторизации.
     2. В поле «Логин» ввести некорректное значение.
-    3. В поле «Пароль» ввести валидный пароль.
+    3. В поле «Пароль» ввести некорректное значение.
     4. Нажать кнопку «Войти».
     5. Убедиться, что вход в систему не выполнен.
     6. Убедиться, что отображается сообщение об ошибке, указывающее на неверный логин или комбинацию логина и пароля.
     """)
     public void testNegative_logInWithAnIncorrectUsername() {
         loginPage.enterLogin("invalidUser")
-                .enterPassword("1q2w3e")
+                .enterPassword("wrongPass")
                 .clickButtonLogin();
 
         assertTrue(loginPage.isErrorMessageDisplayed(),

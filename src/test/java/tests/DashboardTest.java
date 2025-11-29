@@ -30,7 +30,7 @@ public class DashboardTest extends BaseTest {
         8. Убедиться, что появилось сообщение об успехе.
         9. Убедиться, что виджет отображается на дашборде.
         """)
-    void test3_AddWidgetToDashboard(){
+    public void test3_AddWidgetToDashboard(){
         loginPage.enterLogin("default")
                 .enterPassword("1q2w3e")
                 .clickButtonLogin();

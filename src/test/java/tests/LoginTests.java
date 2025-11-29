@@ -22,7 +22,7 @@ class LoginTests extends BaseTest {
     5. Убедиться, что вход в систему не выполнен.
     6. Убедиться, что отображается сообщение об ошибке, указывающее на неверный логин или комбинацию логина и пароля.
     """)
-    public void testNegative_LoginWithWrongPassword() {
+    public void testNegative_logInWithAnIncorrectUsername() {
         loginPage.enterLogin("invalidUser")
                 .enterPassword("wrongPass")
                 .clickButtonLogin();
